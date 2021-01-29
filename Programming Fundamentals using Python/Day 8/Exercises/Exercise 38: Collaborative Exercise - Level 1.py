@@ -1,0 +1,37 @@
+'''
+Write a python lambda expression for the following:
+
+Find the modulo of two numbers and add it to the difference of the same two numbers.
+Find the square root of a number using math library built-in function.
+Find the square root of a number without using built-in function.
+Test your code by using the given sample inputs.
+Verify your code by using the 2nd sample input(highlighted) given below:
+
+Sample Input	Expected Output
+num1 = 10
+num2 = 4
+num3 = 36	8
+6.0
+6.0
+num1 = 36
+num2 = 7
+num3 = 18	
+'''
+
+# Solution
+
+#PF-Exer-38
+#This verification is based on string match.
+import math
+num1=36
+num2=7
+num3=18
+
+calc = lambda x,y : x%y + x-y
+print(calc(num1,num2))
+
+square_root = lambda x : math.sqrt(x)
+print(square_root(num3))
+
+square_root2= lambda x : x**(1/2)
+print(square_root2(num3))
