@@ -1,0 +1,25 @@
+Estimated Time: 30 minutes
+Consider a banking application where customers have accounts. Every customer has unique customer id. A customer can have multiple accounts in the bank. Multiple customers can share a same account number (joint account). Accounts can be of various types like saving account, current account; recurring account etc. Minimum balance must be maintained in each of these account types. Customers can perform deposit and withdrawal transactions through various means like online, cheque, cash etc. A transaction can be initiated by a single customer. A customer must have a name, address and email id. Contact number is optional.
+
+Some relations for this banking application are provided below.
+
+Customer (CustId, Name, Address, EMail, ContactNumber, AcctNumber, AcctType, OpenDate)
+AccountType (AcctType, MinBalance)
+Transaction (TId, TranType, TDate, ChequeNum, AccNum, Amount, CustId)
+Requirements:
+Identify the candidate key(s), primary key and foreign key(s) for the above relations.
+
+Customer
+Primary key ->CustId
+Foreign Key ->AcctType
+Candidate key->AcctNumber, Email
+
+AccountType
+Primary key ->AcctType
+Foreign Key -> -
+Candidate key-> MinBalance
+
+Transaction
+Primary key ->TID
+Foreign Key -> CustId
+Candidate key-> AccNum
