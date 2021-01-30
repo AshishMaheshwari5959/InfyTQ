@@ -1,0 +1,53 @@
+Consider an application for an educational institute. Every department has several instructors but an instructor can be associated with only one department. One among the instructors would act as head of the department. Instructors are allocated to take classes in multiple courses. There are many instructors for a given course. Various relations and their sample data is provided below:
+
+Department(DeptId,DName,HODId)
+
+DeptId-> Primary Key
+HODId-> Foreign Key
+Dname,HODId->Candidate Key
+
+DeptId	DName	HODId
+1	Electronics	11
+2	Mechanical	12
+
+
+Course (CId,CName,Credit)
+
+CId->Primary key
+CName-> CAndiidate key
+
+CId	CName	Credit
+101	Microprocessors	5
+102	Programming	3
+103	Thermodynamics	3
+
+
+Instructor(InstrId,Name,DeptId,EMail)
+
+InstrID -> Primary Key
+DeptId-> Forreign key
+EmailId-> Candidate Key
+
+InstrId	Name	DeptId	EMail
+11	John	1	aaa@zz.com
+12	Mark	2	bbb@zz.com
+13	Jane	1	ccc@zz.com
+14	Joe	2	ddd@zz.com
+
+
+Allocation (CId,InstrId)
+
+CId-> Primary key
+InstrId->Foreign key
+
+CId	InstrId
+101	11
+101	13
+102	11
+102	12
+103	14
+103	12
+
+Requirement:
+Identify the candidate key, primary key and foreign keys.
+
