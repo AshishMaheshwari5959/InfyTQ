@@ -1,0 +1,17 @@
+We will be using the below scenario of an EasyShop Retail Store as a running example and context for most of the assignments in this course.
+
+SQL Commands
+The assignments for the day must be worked out on notepad.
+
+All relations for the retail shop application along with their attributes are mentioned below. A customer can buy multiple items and will receive different bills for each item bought. A customer can purchase at more than 1 retail outlet. Each retail store will have multiple employees. Employees can work in only 1 retail outlet. Managers are also employees. Customers living at the same address are spouses.
+
+Customer (CustId, CustType, CustName, EmailId, ContactNo, Address)
+RetailOutlet (ROId, Location, ManagerId)
+Item (ItemCode, ItemType, Desc, Price, ReorderLevel, QtyOnHand, Category)
+Employee (EmpId, EmpName, Designation, EmailId, ContactNo, WorksIn)
+PurchaseBill (BillId, RetailOutlet, Item, Customer, BillAmount, Bill Date,Quantity)
+Identify candidate key(s), primary key and foreign key(s) for the above relations.
+
+Identify the possible relationships and their cardinality.
+
+The management of EasyShop wants to identify the customer and his/her spouse who is also a customer. How do you create this relationship?
