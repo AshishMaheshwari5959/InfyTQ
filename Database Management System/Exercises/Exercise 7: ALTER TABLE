@@ -1,0 +1,1 @@
+alter table player drop ( contactno )Exercise 6: ALTER TABLE
