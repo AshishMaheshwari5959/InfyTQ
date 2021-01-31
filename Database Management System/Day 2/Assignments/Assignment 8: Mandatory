@@ -1,0 +1,6 @@
+create table supplier(
+Supplierid VARCHAR(6) PRIMARY KEY,
+Name VARCHAR(30),
+ContactNo VARCHAR(15) NOT NULL,
+Emailid	VARCHAR(30)
+)
