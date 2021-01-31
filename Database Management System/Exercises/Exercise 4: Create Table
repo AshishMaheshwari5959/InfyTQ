@@ -1,0 +1,24 @@
+Create the Tournament table as per information below:
+
+Column Name	Data Type	Constraint	Description
+TId	INTEGER	PRIMARY KEY	Unique tournament Id for every tournament
+TName	VARCHAR2(30)	NOT NULL	Tournament Name
+StartDt	DATE	NOT NULL	Start Date of the tournament
+EndDt	DATE	NOT NULL	End Date of the tournament
+Prize	INTEGER	NOT NULL	Prize to be won in the tournament
+
+Write your query here
+create table Tournament(
+TId integer primary key,
+TName varchar(30) not null,
+StartDt date not null,
+EndDt date not null,
+Prize integer not null)
+
+Query Result
+NAME	Null?	TYPE
+TID	NOT NULL	NUMBER
+TNAME	NOT NULL	VARCHAR2(30)
+STARTDT	NOT NULL	DATE
+ENDDT	NOT NULL	DATE
+PRIZE	NOT NULL	NUMBER
