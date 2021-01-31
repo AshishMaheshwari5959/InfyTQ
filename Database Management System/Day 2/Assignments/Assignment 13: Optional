@@ -1,0 +1,9 @@
+create table address(
+houseno number,
+street varchar(30),
+city varchar(20) references city(city),
+zip number(6),
+state varchar(5),
+check(zip>=0),
+primary key(houseno,street,city)
+)
