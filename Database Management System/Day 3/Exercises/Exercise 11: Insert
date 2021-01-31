@@ -1,0 +1,2 @@
+insert into product values
+(110, 'Bat', 50, 'Sports', NULL)
