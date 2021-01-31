@@ -1,0 +1,10 @@
+create table Match(
+MId integer,Exercise 5: Create Table
+TId integer references Tournament(TId),
+Player1 integer references Player(PId),
+Player2 integer references Player(PId),
+MatchDt date not null,
+Winner integer references Player(PId),
+Score varchar(30) not null,
+Constraint player1_2_ck check (Player1<>Player2),
+primary key(MId,TId) )
