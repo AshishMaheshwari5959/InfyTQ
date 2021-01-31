@@ -1,0 +1,2 @@
+create table city(
+city varchar(20) unique)
