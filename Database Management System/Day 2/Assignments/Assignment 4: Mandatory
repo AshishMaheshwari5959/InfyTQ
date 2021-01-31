@@ -1,0 +1,9 @@
+create table article(
+arcode char(5) primary key check(arCode like 'A%'),
+arname varchar(30) not null,
+rate number(8,2),
+Quantity number(4) default 0 ,
+check (quantity>=0) ,
+class char(1),
+check (class in ('A','B','C'))
+)
