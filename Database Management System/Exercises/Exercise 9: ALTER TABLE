@@ -1,0 +1,1 @@
+alter table player modify PName varchar(50)
