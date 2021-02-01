@@ -1,0 +1,1 @@
+insert into shopper(ShopperId,ShopperName,Gender,MobileNo,Address) values (101,'Mark Jane','Male',1234567890,'Allen Street, New York')
