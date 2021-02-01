@@ -1,0 +1,1 @@
+DELETE FROM SaleDetail WHERE quantity <= 5
