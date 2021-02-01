@@ -1,0 +1,1 @@
+select quotationid, sname, itemcode, quotedprice, qdate, qstatus from Quotation where qstatus<>'Accepted'
